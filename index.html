@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+    
+<h1 id="title">Cara mendaftarkan seseorang
+</h1>
+<p id="description">Isi Formulir ini dengan jelas sampai habis</p>
+</header>
+<main>
+<form id="survey-form">
+  <div class="input-element">
+  <label id="name-label">
+    Nama
+    </label>
+    <input placeholder="name" id="name" type="text"required/>
+    </div>
+  <div class="input-element">
+  <label id="email-label">
+    Email
+    </label>
+    <input placeholder="email" id="email" type="email"required/>
+    </div>
+  <div class="input-element">
+  <label id="number-label">
+    Umur
+    </label>
+    <input placeholder="umur" id="number" min="5" max="100" type="number"required/>
+    </div>
+    <div class="input-element">
+  <label id="select-label">
+    Type apa yang ingin di temui
+    </label>
+    <select id="dropdown">
+      <option>Elegan</option>
+      <option>Menawan</option>
+      <option>Imut</option>
+    </select>
+    </div>
+    <div class="form-group">
+      <label>sudahkah kamu menemuinya?</label>
+      <label><input type="radio" name="gift" value="iya"/>Iya</label>
+      <label><input type="radio" name="gift" value="belum"/>Belum</label>
+    </div>
+      
+    <div class="form-group">
+      <label >Type Langka menurut mu</label>
+      <label><input type="checkbox" name="gift"value="Lupa"/>Faceless</label>
+      <label><input type="checkbox" name="gift" value="Mungkin">Tak bisa Dijelaskan</label>
+    </div>
+    <div id="input-element" class="form-group">
+        <label>Tambahan Komen</label>
+        <textarea type="text"></textarea>
+    </div>
+
+    <button type="submit" id="submit">
+      Kirim
+      </button>
+    </form>
+</main>
+</body>
+</html>
